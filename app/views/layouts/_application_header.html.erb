@@ -1,0 +1,62 @@
+<header>
+        <div class="top_links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-left links">
+                        
+                        <ul>
+                            <li><a href="#"><i class="fa fa-phone"></i>034-00000000</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>contact@lexplot.com</a></li>
+                        </ul>
+                    
+                    </div>
+                    
+                    <div class="col-sm-6 text-right social">
+                        
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid_search">
+        	<div class="container">
+                <div class="row">
+                    <div class="col-sm-3">                        
+                        <a class="navbar-brand"> lexplot </a>                    	
+                    </div>
+                   
+                    <div class="col-sm-6">                        
+                        <nav class="navbar-collapse collapse" role="navigation">
+                            <ul class="nav navbar-nav">
+                                <li> <%=link_to t('home'), home_path%></li>                                
+                                <li><%=link_to t('products'), products_path %></li>                               
+                                <li><%=link_to t('about'), about_path%></li>
+                                <li><%=link_to t('contact'), contact_path%></li>                
+                            </ul>
+                        </nav>
+                    
+                    </div>
+                    <div class="col-sm-3">                        
+                           <div class="popup_btn pull-right">
+                           <h4> <%= link_to t('login'), new_user_registration_path() %> </h4>
+                            <button class="form-control popup" text="">  </button>
+                        </div>
+                        
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            </button>
+
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </header>

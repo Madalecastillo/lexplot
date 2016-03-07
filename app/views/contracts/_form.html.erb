@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="form_group">
+		<%= semantic_form_for @contract do |f| %>
+        	<%= f.input :user_id => current_user, :as :hidden %>
+        	<%= f.input :products, :as :select %>
+        	<%= f.input :date_act %>
+        	<%= f.input :date_exp %>
+        	<%= f.input :name %>
+        	<%= f.action :submit, :button_html => { :class => "btn btn-morado luz-btn-mor"} %>
+        <% end %>
+    </div>
+</div>
